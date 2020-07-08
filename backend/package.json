@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0",
+  "description": "Anotações Rocketseat",
+  "main": "",
+  "repository": "aulas",
+  "author": "Rafael Marinho",
+  "license": "",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
