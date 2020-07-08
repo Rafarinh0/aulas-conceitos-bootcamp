@@ -2,12 +2,18 @@
   "name": "backend",
   "version": "1.0",
   "description": "Anotações Rocketseat",
-  "main": "",
+  "main": "src/index.js",
   "repository": "aulas",
   "author": "Rafael Marinho",
   "license": "",
+  "scripts": {
+    "dev": "nodemon"
+  },
   "private": true,
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
