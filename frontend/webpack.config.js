@@ -7,11 +7,11 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-    devServer:{
+    devServer: {
         contentBase: path.resolve(__dirname, 'public'),
     },
 
-    module:{
+    module: {
         rules: [
             {
                 test: /\.js$/,
@@ -19,7 +19,23 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                 }
-            }
+            },
+
+            {
+                test: /\.css$/,
+                exclude: /\.node_modules/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                ]
+            },
+
+            {
+                test: /.*\.(gif|png|jpg?g)$/i,
+                use: {
+                    loader: 'file-loader',
+                }
+            },
         ]
     },
 };

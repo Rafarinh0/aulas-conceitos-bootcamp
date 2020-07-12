@@ -81,20 +81,18 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/******/ ([
+/* 0 */
+/*!************************!*\
+  !*** multi dev server ***!
+  \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("var soma = function soma(a, b) {\n  return a + b;\n};\n\nconsole.log(soma(1, 2));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'dev'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'server'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n//# sourceURL=webpack:///multi_dev_server?");
 
 /***/ })
-
-/******/ });
+/******/ ]);
